@@ -25,7 +25,7 @@ fs.readFile('/www/index.html', 'utf8', (err, data) =>{
         console.error(err)
         return
     }
-})
+
 
 // If there is an error, put it on the console error, return, and exit with error code 1. 
 // Do not be nice about exiting.
@@ -54,6 +54,8 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
     console.log(`Server running at port ${port}`)
   })
+
+})
 
 
 // That's it! You're all done!
